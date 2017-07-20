@@ -30,3 +30,9 @@ h2 {
   {
     height: 400px  !important;
   }
+.table-responsive{
+  position: absolute;
+}
+table {
+    background-color: rgba(223, 240, 216, 0.6);
+}

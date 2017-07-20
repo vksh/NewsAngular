@@ -6,7 +6,7 @@
             .state('home', {
                 url:'/',
                 //template:'<drafttable-component tabletype="draft"></table-component>'
-                template: '<h1>Hii</h1>'
+                template: '<sports-component></sports-component>'
             })
             .state('sports',{
                 url:'/sports',

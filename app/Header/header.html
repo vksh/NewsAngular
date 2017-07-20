@@ -37,7 +37,9 @@
                     <tbody>
                         <br>
                         <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam" ng-click="$ctrl.SelectTeam(name)" ng-model="$ctrl.stocker">
-                            <td>{{team.name}}</td>
+                            <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px"></td>  
+                          <td>{{team.name}}</td>
+
                            
                       </tr>
                     </tbody>

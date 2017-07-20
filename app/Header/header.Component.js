@@ -5,6 +5,7 @@
         SearchService.getTeam(search).then(function (response) {
             self.team = [];
             self.team = response.data.articles;
+          
             console.log(self.team);
         });
     };

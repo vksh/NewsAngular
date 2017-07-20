@@ -1,0 +1,25 @@
+   <label class="hidden-xs" for="search_stock">SEARCH Team : </label>
+
+            <input class="form-control" type="search" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getData($ctrl.searchTeam)" />
+            <div class=" table-responsive" ng-show="$ctrl.searchTeam">
+                <table class="table table-bordered table-striped ">
+                    <thead>
+                        <tr>
+                            <th>Team Name</th>
+                            <th> Short Name</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <br>
+                        <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam" ng-click="$ctrl.SelectTeam(name)" ng-model="$ctrl.stocker">
+                            <td>{{team.name}}</td>
+                            <td>{{team.shortName}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    
+                

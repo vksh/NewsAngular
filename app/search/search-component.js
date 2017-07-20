@@ -1,4 +1,4 @@
-  app.controller('SearchController', ['$window', 'SearchService', function ($window, SearchService) {
+app.controller('SearchController', ['$window', 'SearchService', function ($window, SearchService) {
 
     var self = this;
     this.getData = function (search) {
@@ -10,8 +10,8 @@
     };
 
 }])
-    .component('headerComponent', {
-        templateUrl: '/Header/header.html',
+    .component('formComponent', {
+        templateUrl: '/search/search.html',
         controller: 'SearchController'
     })
 

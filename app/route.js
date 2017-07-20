@@ -1,8 +1,9 @@
    var app=angular.module('myApp',['ui.router'])
      .config(function ($stateProvider,$urlServiceProvider) {
-        $urlServiceProvider.rules.otherwise({state:'portfoliopm'}); 
+         
+        $urlServiceProvider.rules.otherwise({state:'home'}); 
         $stateProvider
-            .state('portfoliopm', {
+            .state('home', {
                 url:'/',
                 //template:'<drafttable-component tabletype="draft"></table-component>'
                 template: '<h1>Hii</h1>'
@@ -16,5 +17,9 @@
                 template:'<news-component></news-component>'
             })
 
+            .state('ranking',{
+                url:'/ranking',
+                template:'<ranking-component></ranking-component>'
+            })
     })
 

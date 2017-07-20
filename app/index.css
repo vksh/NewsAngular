@@ -23,6 +23,10 @@ h2 {
   }
   .well{
     margin:15px 15px;
-    background-color: rgba(213, 224, 230, 1);
+   background-color: rgba(223, 240, 216, 0.5);
     border: 1px solid #060000;
+  }
+  .carousel-image
+  {
+    height: 400px  !important;
   }

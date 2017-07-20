@@ -1,81 +1,56 @@
 {
+"status": "ok",
+"source": "techcrunch",
+"sortBy": "latest",
+"articles": [
+  {
+ "name": "Leicester City FC",
+    "code": "LCFC",
+    "shortName": "Foxes",
+    "squadMarketValue": null,
+    "crestUrl": "http://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png"
+},
+     { "name": "Arsenal FC",
+    "code": "AFC",
+    "shortName": "Arsenal",
+    "squadMarketValue": null,
+    "crestUrl": "http://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+},
+  {
+     "name": "Aston Villa FC",
+    "code": "AVFC",
+    "shortName": "Aston Villa",
+    "squadMarketValue": null,
+    "crestUrl": "http://upload.wikimedia.org/wikipedia/de/9/9f/Aston_Villa_logo.svg"
+  },
+  {
+     "name": "Chelsea FC",
+    "code": "CFC",
+    "shortName": "Chelsea",
+    "squadMarketValue": null,
+    "crestUrl": "http://upload.wikimedia.org/wikipedia/de/5/5c/Chelsea_crest.svg"
+  },
+{
+  "name": "Everton FC",
+    "code": "EFC",
+    "shortName": "Everton",
+    "squadMarketValue": null,
+    "crestUrl": "http://upload.wikimedia.org/wikipedia/de/f/f9/Everton_FC.svg"
+},
+  {
+"name": "Manchester City FC",
+    "code": "MCFC",
+    "shortName": "ManCity",
+    "squadMarketValue": null,
+    "crestUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+  },
+  {
+   "name": "Manchester United FC",
+    "code": "MUFC",
+    "shortName": "ManU",
+    "squadMarketValue": null,
+    "crestUrl": "http://upload.wikimedia.org/wikipedia/de/d/da/Manchester_United_FC.svg"
+  }
 
-   Rank	Name	Team	Rating
-1	Kohli	India	873
-2	Warner	Australia	861
-3	de Villiers	South Africa	847
-4	Root	England	799
-5	Babar Azam	Pakistan	786
-6	Williamson	New Zealand	779
-7	de Kock	South Africa	769
-8	du Plessis	South Africa	768
-9	Guptill	New Zealand	749
-10	Amla	South Africa	741
-
-
-    "status": "ok",
-    "source": "espn-cric-info",
-    "sortBy": "top",
-    "ranking": [
-        {
-            "rank": 1,
-            "name": "Kohli",
-            "team": "India",
-            "rating": 873
-         },
-          {
-            "rank": 2,
-            "name": "Warner ",
-            "team": "Australia",
-            "rating": 861
-         },
-          {
-            "rank": 3,
-            "name": "De Villiers ",
-            "team": "South Africa",
-            "rating": 847
-         },
-          {
-            "rank": 4,
-            "name": "Root ",
-            "team": "England",
-            "rating": 799
-         },
-          {
-            "rank": 5,
-            "name": "Babar Azam ",
-            "team": "Pakistan",
-            "rating": 786
-         },
-          {
-            "rank": 6,
-            "name": "Williamson",
-            "team": "New Zealand",
-            "rating": 779
-         },
-          {
-            "rank": 7,
-            "name": "de Kock",
-            "team": "South Africa",
-            "rating": 769
-         },
-          {
-            "rank": 8,
-            "name": "du Plessis",
-            "team": "South Africa",
-            "rating": 768
-         },
-          {
-            "rank": 9,
-            "name": "Guptill",
-            "team": "New Zealand",
-            "rating": 763
-         },
-          {
-            "rank": 10,
-            "name": "Amla",
-            "team": "South Africa",
-            "rating": 749
-         }
 ]
 }

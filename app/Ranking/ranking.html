@@ -1,0 +1,59 @@
+<section class="row container-fluid well" >
+    <div class="col-xs-4">
+<table border="1" width="100%" >
+<tr>
+<th ng-click="orderByMe1('rank')" >Rank </th>
+<th ng-click="orderByMe1('name')">Name</th>
+<th ng-click="orderByMe1('team')">Country</th>
+<th ng-click="orderByMe1('rating')">Rating</th>
+
+</tr>
+<tr ng-repeat="x in myData | orderBy:myOrderBy1">
+<td>{{x.rank}}</td>
+<td>{{x.name}}</td>
+<td>{{x.team}}</td>
+<td>{{x.rating}}</td>
+
+</tr>
+</table>
+    </div>
+
+
+<div class="col-xs-4">
+<table border="1" width="100%" >
+<tr>
+<th ng-click="orderByMe2('rank1')" >Rank </th>
+<th ng-click="orderByMe2('name')">Name</th>
+<th ng-click="orderByMe2('team')">Country</th>
+<th ng-click="orderByMe2('rating')">Rating</th>
+
+</tr>
+<tr ng-repeat="x in odiData | orderBy:myOrderBy2">
+<td>{{x.rank}}</td>
+<td>{{x.name}}</td>
+<td>{{x.team}}</td>
+<td>{{x.rating}}</td>
+
+</tr>
+</table>
+</div>
+
+<div class="col-xs-4">
+<table border="1" width="100%" >
+<tr>
+<th ng-click="orderByMe3('rank3')" >Rank </th>
+<th ng-click="orderByMe3('name')">Name</th>
+<th ng-click="orderByMe3('team')">Country</th>
+<th ng-click="orderByMe3('rating')">Rating</th>
+
+</tr>
+<tr ng-repeat="x in twentyData | orderBy:myOrderBy3">
+<td>{{x.rank}}</td>
+<td>{{x.name}}</td>
+<td>{{x.team}}</td>
+<td>{{x.rating}}</td>
+
+</tr>
+</table>
+</div>
+</section>

@@ -1,0 +1,28 @@
+div.news{
+
+  height: 250px;
+    background-color: grey;
+    
+}
+.img-news{
+height: 250px;
+}
+.image { 
+   position: relative; 
+ 
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+  section{
+    margin-top:25px;
+  }
+  .well{
+    margin:15px 15px;
+    background-color: rgba(213, 224, 230, 1);
+    border: 1px solid #060000;
+  }

@@ -32,7 +32,7 @@
         </div>
         </form>
 
-        <div class=" table-responsive col-sm-12 col-md-12 pull-right" ng-show="$ctrl.searchTeam">
+        <div class=" table-responsive col-sm-12 col-md-12 pull-right" ng-show="$ctrl.searchTeam" >
                 <table class="table table-bordered table-inverse table-hover table-success ">
                 
                     <tbody>
@@ -51,7 +51,7 @@
 
     </div>
 </div>
-<div class="col-xs-12" ng-repeat="x in $ctrl.details" >
+<div class="col-xs-12" ng-repeat="x in $ctrl.details">
     <div class="col-xs-12">
         <img src="{{x.crestUrl}}" class="img-responsive col-xs-2"  height="200px">
         <h1 class="jumbotron col-xs-8" > {{x.TeamName}}</h1>

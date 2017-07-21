@@ -36,3 +36,11 @@ h2 {
 table {
     background-color: rgba(223, 240, 216, 0.6);
 }
+  .teamdetails {
+   
+    height: 100px;
+    padding: 15px;
+  background-color: rgba(231, 249, 223, 0.6);
+    box-shadow: 10px 10px 5px grey;
+    margin: 5px 5px 5px 5px;
+}

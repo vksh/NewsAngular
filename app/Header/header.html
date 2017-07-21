@@ -36,9 +36,9 @@
                 
                     <tbody>
                         <br>
-                        <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam" ng-click="$ctrl.SelectTeam(name)" ng-model="$ctrl.stocker">
-                            <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px"></td>  
-                          <td>{{team.name}}</td>
+                        <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam"  ng-model="$ctrl.stocker" ng-click="$ctrl.selectTeam(team)"> 
+                            <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px" ></td>  
+                          <td ui-sref="details">{{team.name}}</td>
 
                            
                       </tr>
@@ -50,6 +50,3 @@
 
     </div>
 </div>
-
-            
-            

@@ -6,20 +6,32 @@
             .state('home', {
                 url:'/',
                 //template:'<drafttable-component tabletype="draft"></table-component>'
-                template: '<sports-component></sports-component>'
+                template: '<header-component></header-component>'+
+ '<carousel-component></carousel-component>'+
+                '<sports-component></sports-component>'
             })
             .state('sports',{
                 url:'/sports',
-                template:'<sports-component></sports-component> '
+                template: '<header-component></header-component>'+
+ '<carousel-component></carousel-component>'+
+                '<sports-component></sports-component> '
             })
             .state('news',{
                 url:'/news',
-                template:'<news-component></news-component>'
+                template: '<header-component></header-component>'+
+ '<carousel-component></carousel-component>'+
+                '<news-component></news-component>'
             })
 
             .state('ranking',{
                 url:'/ranking',
-                template:'<ranking-component></ranking-component>'
+                template: '<header-component></header-component>'+
+ '<carousel-component></carousel-component>'+
+                '<ranking-component></ranking-component>'
+            })
+            .state('details',{
+                url:'/teamdetails',
+                template: '<teamdetails-component></teamdetails-component>'
             })
     })
 

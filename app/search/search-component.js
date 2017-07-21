@@ -1,4 +1,4 @@
-app.controller('SearchController', ['$window', 'SearchService', function ($window, SearchService) {
+app.controller('SearchController', ['$window', 'SearchService', function ($window, SearchService,$scope) {
 
     var self = this;
     this.getData = function (search) {
@@ -8,9 +8,21 @@ app.controller('SearchController', ['$window', 'SearchService', function ($windo
             console.log(self.team);
         });
     };
+        this.selectTeam=function(name){
+        SearchService.getdetails(name.code).then(function(response){
+          self.details = [];
+         
+          
+          self.details=response.data.teamdetails;
+           
+          console.log(self.details);
+          
+          
+        })
+    };
 
 }])
-    .component('formComponent', {
+    .component('teamdetailsComponent', {
         templateUrl: '/search/search.html',
         controller: 'SearchController'
     })
@@ -22,7 +34,10 @@ app.controller('SearchController', ['$window', 'SearchService', function ($windo
             return $http.get(url);
         };
 
-
+ this.getdetails=function(string){
+            var url="/Data/"+string+".json";
+            return $http.get(url);
+        };
 
     }]);
 

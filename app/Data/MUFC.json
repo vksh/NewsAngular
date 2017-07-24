@@ -220,7 +220,127 @@
                     "contractUntil": "2019-06-30",
                     "marketValue": null
                 }
-            ]
+            ],
+            "stats": [
+                {   "Season":"2016-2017",
+                    "GamesPlayed": 38,
+                    "wins": 30,
+                    "Loss": 3,
+                    "Draw": 5,
+                    "GoalsFor": 85,
+                    "GoalAgg": 33,
+                    "points": 93,
+                    "ShotsOnGoal": 205,
+                    "Shots": 579,
+                    "HeaderGoals": 74,
+                    "YellowCards": 72,
+                    "RedCards": 0,
+                    "Fouls": 395
+                },
+                {   "Season":"2016-2017",
+                    "GamesPlayed": 38,
+                    "wins": 30,
+                    "Loss": 3,
+                    "Draw": 5,
+                    "GoalsFor": 85,
+                    "GoalAgg": 33,
+                    "points": 93,
+                    "ShotsOnGoal": 205,
+                    "Shots": 579,
+                    "HeaderGoals": 74,
+                    "YellowCards": 72,
+                    "RedCards": 0,
+                    "Fouls": 395
+                },
+                {   "Season":"2016-2017",
+                    "GamesPlayed": 38,
+                    "wins": 30,
+                    "Loss": 3,
+                    "Draw": 5,
+                    "GoalsFor": 85,
+                    "GoalAgg": 33,
+                    "points": 93,
+                    "ShotsOnGoal": 205,
+                    "Shots": 579,
+                    "HeaderGoals": 74,
+                    "YellowCards": 72,
+                    "RedCards": 0,
+                    "Fouls": 395
+                },
+                {   "Season":"2016-2017",
+                    "GamesPlayed": 38,
+                    "wins": 30,
+                    "Loss": 3,
+                    "Draw": 5,
+                    "GoalsFor": 85,
+                    "GoalAgg": 33,
+                    "points": 93,
+                    "ShotsOnGoal": 205,
+                    "Shots": 579,
+                    "HeaderGoals": 74,
+                    "YellowCards": 72,
+                    "RedCards": 0,
+                    "Fouls": 395
+                },
+                {   "Season":"2016-2017",
+                    "GamesPlayed": 38,
+                    "wins": 30,
+                    "Loss": 3,
+                    "Draw": 5,
+                    "GoalsFor": 85,
+                    "GoalAgg": 33,
+                    "points": 93,
+                    "ShotsOnGoal": 205,
+                    "Shots": 579,
+                    "HeaderGoals": 74,
+                    "YellowCards": 72,
+                    "RedCards": 0,
+                    "Fouls": 395
+                }
+
+            ],
+             "playerStat":[ 
+                {
+                    "Topscorer":[
+                        {
+                            "Name":"dsfkl",
+                            "Goals":21
+                        },
+                        {
+                            "Name":"dsfkl",
+                            "Goals":21
+                        },{
+                            "Name":"dsfkl",
+                            "Goals":21
+                        },{
+                            "Name":"dsfkl",
+                            "Goals":21
+                        },{
+                            "Name":"dsfkl",
+                            "Goals":21
+                        }
+                     ],
+                    "TopAssists":[
+                        {
+                            "Name":"dsfkl",
+                            "Assists":21
+                        },
+                        {
+                            "Name":"dsfkl",
+                            "Assists":21
+                        },{
+                            "Name":"dsfkl",
+                            "Assists":21
+                        },{
+                            "Name":"dsfkl",
+                            "Assists":21
+                        },{
+                            "Name":"dsfkl",
+                            "Assists":21
+                        }
+                     ]
+
+                }]
         }
     ]
 }

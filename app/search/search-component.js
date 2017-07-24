@@ -16,6 +16,7 @@ app.controller('SearchController', ['$window', 'SearchService', function ($windo
           self.details=response.data.teamdetails;
            
           console.log(self.details);
+          self.searchTeam="";
           
           
         })

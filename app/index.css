@@ -30,23 +30,31 @@ h2 {
   {
     height: 400px  !important;
   }
-.table-responsive{
+.search-table{
   position: absolute;
 }
-table {
+ table {
     background-color: rgba(223, 240, 216, 0.6);
-}
+} 
   .teamdetails {
    
     height: 100px;
     padding: 15px;
   background-color: rgba(231, 249, 223, 0.6);
     box-shadow: 10px 10px 5px grey;
-    margin: 5px 5px 5px 5px;
+  
 }
   .ranking-table{
      padding: 15px;
   background-color: rgba(231, 249, 223, 0.6);
     box-shadow: 10px 10px 5px grey;
     /* margin: 5px 65px 5px 45px; */
+  }
+
+  .stats-table{
+    margin-top: 20px;
+  }
+  .players{
+    margin-bottom: 5px;
+    margin-top:10px
   }

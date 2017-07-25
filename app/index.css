@@ -58,3 +58,6 @@ h2 {
     margin-bottom: 5px;
     margin-top:10px
   }
+  .select_stats{
+    display: list-item;
+  }

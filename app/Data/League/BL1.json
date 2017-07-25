@@ -1,0 +1,143 @@
+{
+    "teams": [
+        {
+            
+            "name": "FC Bayern München",
+            "code": "FCB",
+            "shortName": "Bayern",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/commons/c/c5/Logo_FC_Bayern_München.svg"
+        },
+        {
+            
+            "name": "Bayer Leverkusen",
+            "code": "B04",
+            "shortName": "Leverkusen",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/en/5/59/Bayer_04_Leverkusen_logo.svg"
+        },
+        {
+            
+            "name": "Hamburger SV",
+            "code": "HSV",
+            "shortName": "HSV",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/commons/6/66/HSV-Logo.svg"
+        },
+        { 
+            "name": "FC Augsburg",
+            "code": "FCA",
+            "shortName": "Augsburg",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/de/b/b5/Logo_FC_Augsburg.svg"
+        },
+        { 
+            "name": "Hertha BSC",
+            "code": "BSC",
+            "shortName": "Hertha",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Hertha_BSC_Logo_2012.svg"
+        },
+        { 
+            "name": "VfB Stuttgart",
+            "code": "VFB",
+            "shortName": "Stuttgart",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/commons/a/ab/VfB_Stuttgart_Logo.svg"
+        },
+        {
+            
+            "name": "TSG 1899 Hoffenheim",
+            "code": "TSG",
+            "shortName": "Hoffenheim",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Logo_TSG_Hoffenheim.svg"
+        },
+        { 
+            "name": "Werder Bremen",
+            "code": "SVW",
+            "shortName": "Bremen",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/commons/b/be/SV-Werder-Bremen-Logo.svg"
+        },
+        {
+           
+            "name": "1. FSV Mainz 05",
+            "code": "M05",
+            "shortName": "Mainz",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/de/0/0b/FSV_Mainz_05_Logo.svg"
+        },
+        {
+            
+            "name": "Hannover 96",
+            "code": "H96",
+            "shortName": "Hannover",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Hannover_96_Logo.svg"
+        },
+        {
+            
+            "name": "VfL Wolfsburg",
+            "code": "WOB",
+            "shortName": "Wolfsburg",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Logo-VfL-Wolfsburg.svg"
+        },
+        {
+             
+            "name": "Borussia Dortmund",
+            "code": "BVB",
+            "shortName": "Dortmund",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg"
+        },
+        {
+             
+            "name": "FC Schalke 04",
+            "code": "S04",
+            "shortName": "Schalke",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/FC_Schalke_04_Logo.svg"
+        },
+        { 
+            "name": "Red Bull Leipzig",
+            "code": "RBL",
+            "shortName": "Leipzig",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/en/0/04/RB_Leipzig_2014_logo.svg"
+        },
+        {
+             
+            "name": "SC Freiburg",
+            "code": "SCF",
+            "shortName": "Freiburg",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/de/f/f1/SC-Freiburg_Logo-neu.svg"
+        },
+        {
+             
+            "name": "Eintracht Frankfurt",
+            "code": "SGE",
+            "shortName": "Frankfurt",
+            "squadMarketValue": null,
+            "crestUrl": "http://upload.wikimedia.org/wikipedia/commons/0/04/Eintracht_Frankfurt_Logo.svg"
+        },
+        {
+            
+            "name": "Bor. Mönchengladbach",
+            "code": "BMG",
+            "shortName": "Gladbach",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Borussia_Mönchengladbach_logo.svg"
+        },
+        {
+            
+            "name": "1. FC Köln",
+            "code": "EFFZEH",
+            "shortName": "Köln",
+            "squadMarketValue": null,
+            "crestUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/FC_Cologne_logo.svg"
+        }
+    ]
+}

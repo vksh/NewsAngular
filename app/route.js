@@ -32,5 +32,9 @@ var app = angular.module('myApp', ['ui.router'])
                 url: '/teamdetails',
                 template: '<teamdetails-component></teamdetails-component>'
             })
+             .state('stats', {
+                url: '/stats',
+                template: '<stats-component></stats-component>'
+            })
     })
 

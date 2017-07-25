@@ -1,0 +1,72 @@
+<div class="navbar navbar-primary bg-success navbar-static-top" role="navigation">
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" rel="home" ui-sref="home">Website Name</a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="sports">Sports</a></li>
+            <li><a ui-sref="news">News</a></li>
+            <li><a ui-sref="ranking">Ranking</a></li>
+        </ul>
+
+        <div class="col-sm-3 col-md-3 col-xs-12 pull-right">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input class="form-control" type="search" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getData($ctrl.searchTeam)"
+                    />
+                    <!-- <div class="input-group-btn">
+                        <button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div> -->
+                </div>
+            </form>
+
+            <div class=" table-responsive search-table col-sm-12 col-md-12 pull-right" ng-show="$ctrl.searchTeam">
+                <table class="table table-bordered table-inverse table-hover table-success ">
+
+                    <tbody>
+                        <br>
+                        <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam" ng-model="$ctrl.stocker" ng-click="$ctrl.selectTeam(team)">
+                            <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px"></td>
+                            <td ui-sref="details">{{team.name}}</td>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="col-xs-12" ng-repeat="x in $ctrl.details">
+    <div class="col-xs-12">
+        <img src="{{x.crestUrl}}" class="img-responsive col-xs-12 col-md-2 " height="200px">
+        <h1 class="jumbotron col-xs-12 col-md-8 col-md-offset-2"> {{x.TeamName}}</h1>
+    </div>
+    <div class="col-xs-12">
+
+        <button class="btn btn-lg btn-success col-md-3 col-sm-3 col-md-offset-1 " ng-click="showme=true" ng-dblclick="showme=false">Player</button>
+        <button class="btn btn-lg btn-success col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1" ng-click="showTable=true ;showme=false"
+            ng-dblclick="showme=false">Stats</button>
+
+        <button class="btn btn-lg btn-success col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1" ng-click="showme=true" ng-dblclick="showme=false">Player</button>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-2 col-md-offset-1 players z-depth-3  " ng-repeat="y in x.players" ng-show="showme">
+        <p>Name: {{y.name}}</p>
+        <p>Position: {{y.position}}</p>
+        <p>Nationality : {{y.nationality}}</p>
+    </div>
+
+</div>

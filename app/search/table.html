@@ -1,0 +1,87 @@
+ <div class="col-xs-12 col-sm-12 table-responsive stats-table">
+        <table class="table table-inverse  table-striped" border="1" width="100%">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Season</th>
+                    <th>Games Played </th>
+                    <th>Wins</th>
+                    <th>Loss</th>
+                    <th>Draw</th>
+                    <th>Goals For</th>
+                    <th>Goal Agg</th>
+                    <th>Points</th>
+                    <th>Shots On Goal</th>
+                    <th>Shots</th>
+                    <th>Header Goals</th>
+                    <th>Yellow Cards</th>
+                    <th>Red Cards</th>
+                    <th>Fouls</th>
+                </tr>
+            </thead>
+            <tr ng-repeat="stats in x.stats">
+                <td>{{stats.Season}}</td>
+                <td>{{stats.GamesPlayed}}</td>
+                <td>{{stats.wins}}</td>
+                <td>{{stats.Loss}}</td>
+                <td>{{stats.Draw}}</td>
+                <td>{{stats.GoalsFor}}</td>
+                <td>{{stats.GoalAgg}}</td>
+                <td>{{stats.points}}</td>
+                <td>{{stats.ShotsOnGoal}}</td>
+                <td>{{stats.Shots}}</td>
+                <td>{{stats.HeaderGoals}}</td>
+                <td>{{stats.YellowCards}}</td>
+                <td>{{stats.RedCards}}</td>
+                <td>{{stats.Fouls}}</td>
+            </tr>
+
+        </table>
+
+
+    </div>
+    <div class="col-xs-12">
+        <div class="col-md-6" ng-repeat="z in x.playerStat">
+            <table class="table table-inverse centered table-striped" border="1" width="100%">
+
+                <thead class="thead-inverse">
+                    <tr>
+                        <th colspan="2">
+                            Top Scorrer</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Goals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="player in z.Topscorer">
+                        <td>{{player.Name}}</td>
+                        <td>{{player.Goals}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="col-md-6 col-xs-12 " ng-repeat="z in x.playerStat">
+
+            <table class="table table-inverse centered table-striped" border="1" width="100%">
+
+                <thead class="thead-inverse">
+                    <tr>
+                        <th colspan="2">
+                            Top Assists</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Assists</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="player in z.TopAssists">
+                        <td>{{player.Name}}</td>
+                        <td>{{player.Assists}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

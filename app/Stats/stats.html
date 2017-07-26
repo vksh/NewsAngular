@@ -2,39 +2,64 @@
     <form class="col s12">
         <div class="row">
             <div class=" col s6">
-                <select ng-model="selectedLeague" class="select_stats" ng-clock >
+                <select ng-model="selectedLeague" ng-change="showleague=false" class="select_stats" ng-clock>
       <option value="" disabled selected>Select League</option>
       <option  value="{{caption.league}}" ng-repeat="caption in $ctrl.league">{{caption.caption}}</option>
     </select>
 
             </div>
             <div class=" col s6">
+              
                 <input class="form-control" type="search" placeholder="Enter Club Name" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getTeamsSheet(selectedLeague)">
-                   
-           
-
-            <div class=" table-responsive search-table col-sm-12 col-md-6 pull-right" ng-show="$ctrl.searchTeam">
-                <table class="table table-bordered table-inverse table-hover table-success ">
-
-                    <tbody>
-                        <br>
-                        <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam" ng-model="$ctrl.stocker" ng-click="$ctrl.selectTeam(team)">
-                            <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px"></td>
-                            <td ui-sref="stats">{{team.name}}</td>
 
 
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+                <div class=" table-responsive search-table col-sm-12 col-md-6 pull-right" ng-show="$ctrl.searchTeam">
+                    <table class="table table-bordered table-inverse  table-success ">
+
+                        <tbody>
+                            <br>
+                            <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam"  ng-click="$ctrl.selectTeam(team)">
+                                <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px"></td>
+                                <td ui-sref="stats"><strong>{{team.name}}</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </form>
 </section>
 
-<section class="container-fluid row" >
-    <div class="col-md-3 col-md-offset-1 stats-div" ng-repeat="caption in $ctrl.league">
-     <center>   <img src="{{caption.crest}}" class="img-responsive img-stats" alt="No image available" ></center>
- 
+<section class="container-fluid row" ng-hide="$ctrl.showleague">
+    <div class="col-md-3 col-md-offset-1 stats-div"  ng-repeat="caption in $ctrl.league" ng-click="$ctrl.selectLeagueTeam(caption.league)">
+        <center> <img src="{{caption.crest}}" class="img-responsive img-stats" alt="No image available"></center>
+
+    </div>
+</section>
+
+<section class="container-fluid row" ng-hide="$ctrl.showTeams">
+    <div class="col-md-3  stats-div" ng-repeat="teams in $ctrl.leagueTeam" ng-click="$ctrl.selectTeam(teams)" >
+        <center> <img src="{{teams.crestUrl}}" class="img-responsive img-leagueteam"  ></center>
+                <h5 class="text-center">{{teams.name}}</h5>
+    </div></section>
+
+<section class="container-fluid" ng-show="$ctrl.showTeamDetails">
+   <div class="col-xs-12">
+        <img src="{{$ctrl.crest}}" class="img-responsive col-xs-12 col-md-2 col-md-offset-1" height="200px">
+        <h1 class="teamName col-xs-12 col-md-8 col-md-offset-1"> {{$ctrl.name}}</h1>
+    </div>
+    <div class="col-xs-12">
+
+        <button class="btn btn-lg btn-success col-md-3 col-sm-3 col-md-offset-1 " ng-click="showme=true;showTable=false" ng-dblclick="showme=false">Player</button>
+        <button class="btn btn-lg btn-success col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1" ng-click="showTable=true ;showme=false"
+            ng-dblclick="showme=false">Stats</button>
+
+        <button class="btn btn-lg btn-success col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1" ng-click="showme=true" ng-dblclick="showme=false">Player</button>
+    </div>
+    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-2 col-md-offset-1 players z-depth-3 " ng-repeat="y in $ctrl.details" >
+        <p>Name: {{y.name}}</p>
+        <p>Position: {{y.position}}</p>
+        <p>Nationality : {{y.nationality}}</p>
     </div>
 </section>

@@ -34,7 +34,8 @@ h2 {
   position: absolute;
 }
  table {
-    background-color: rgba(223, 240, 216, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
 } 
   .teamdetails {
    
@@ -53,6 +54,7 @@ h2 {
 
   .stats-table{
     margin-top: 20px;
+    z-index: 5000;
   }
   .players{
     margin-bottom: 5px;
@@ -67,4 +69,11 @@ h2 {
   margin-bottom: 10px;
      background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 15px 15px 15px 9px #313131;
+  }
+  .img-leagueteam{
+    height:100px;
+  }
+
+  .teamName{
+    z-index: -500;
   }

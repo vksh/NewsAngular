@@ -4,7 +4,7 @@ div.news{
     background-color: grey;
     
 }
-.img-news{
+.img-news,.img-stats{
 height: 250px;
 }
 .image { 
@@ -60,4 +60,11 @@ h2 {
   }
   .select_stats{
     display: list-item;
+  }
+  .stats-div{
+      padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+     background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 15px 15px 15px 9px #313131;
   }

@@ -19,32 +19,11 @@
       <li><a ui-sref="sports">Sports</a></li>
       <li><a ui-sref="news">News</a></li>
       <li><a ui-sref="ranking">Ranking</a></li>
+      <li><a ui-sref="stats">Stats</a></li>
+      
     </ul>
 
-        <div class="col-sm-3 col-md-3 pull-right">
-        <form class="navbar-form" role="search">
-        <div class="input-group">
-      <input class="form-control" type="search" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getData($ctrl.searchTeam)" />
-            <div class="input-group-btn">
-                <button class="btn btn-success" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-            </div>
-        </div>
-        </form>
-
-        <div class=" table-responsive search-table col-sm-12 col-md-12 pull-right" ng-show="$ctrl.searchTeam">
-                <table class="table table-bordered table-inverse table-hover table-success ">
-                
-                    <tbody>
-                        <br>
-                        <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam"  ng-model="$ctrl.stocker" ng-click="$ctrl.selectTeam(team)"> 
-                            <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px" ></td>  
-                          <td ui-sref="details">{{team.name}}</td>
-
-                           
-                      </tr>
-                    </tbody>
-                </table>
-            </div>
+        
         </div>
         </div>
 

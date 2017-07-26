@@ -34,7 +34,8 @@ var app = angular.module('myApp', ['ui.router'])
             })
              .state('stats', {
                 url: '/stats',
-                template: '<stats-component></stats-component>'
+                template:'<header-component></header-component>' +
+                 '<stats-component></stats-component>'
             })
     })
 

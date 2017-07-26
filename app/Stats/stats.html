@@ -1,21 +1,19 @@
-<section class="container-fluid">
+<section class="container-fluid" ng-init="$ctrl.selectLeague()">
     <form class="col s12">
         <div class="row">
             <div class=" col s6">
-                <select ng-model="selectedLeague" class="select_stats" ng-clock ng-click="$ctrl.selectLeague()">
-      <option value="" disabled selected>Choose your option</option>
+                <select ng-model="selectedLeague" class="select_stats" ng-clock >
+      <option value="" disabled selected>Select League</option>
       <option  value="{{caption.league}}" ng-repeat="caption in $ctrl.league">{{caption.caption}}</option>
-      
-   
     </select>
 
             </div>
             <div class=" col s6">
-                <input class="form-control" type="search" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getTeamsSheet(selectedLeague)"
-                    <label for="team">Team Name</label>
-            </div>
+                <input class="form-control" type="search" placeholder="Enter Club Name" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getTeamsSheet(selectedLeague)">
+                   
+           
 
-               <div class=" table-responsive search-table col-sm-12 col-md-6 pull-right" ng-show="$ctrl.searchTeam">
+            <div class=" table-responsive search-table col-sm-12 col-md-6 pull-right" ng-show="$ctrl.searchTeam">
                 <table class="table table-bordered table-inverse table-hover table-success ">
 
                     <tbody>
@@ -30,5 +28,13 @@
                 </table>
             </div>
             </div>
+        </div>
     </form>
+</section>
+
+<section class="container-fluid row" >
+    <div class="col-md-3 col-md-offset-1 stats-div" ng-repeat="caption in $ctrl.league">
+     <center>   <img src="{{caption.crest}}" class="img-responsive img-stats" alt="No image available" ></center>
+ 
+    </div>
 </section>

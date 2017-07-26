@@ -5,6 +5,7 @@
             
             "name": "Athletic Club",
             "code": "BIL",
+            "id":77,
             "shortName": "Athletic",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/7/7f/Athletic_Club_Bilbao.svg"
@@ -12,6 +13,7 @@
         {
             "name": "Getafe CF",
             "code": "FCG",
+            "id":82,
             "shortName": "Getafe",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/d/de/Getafe_CF.svg"
@@ -20,6 +22,7 @@
           
             "name": "Sevilla FC",
             "code": "SEV",
+            "id":559,
             "shortName": "Sevilla",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/en/8/86/Sevilla_cf_200px.png"
@@ -28,6 +31,7 @@
            
             "name": "RCD Espanyol",
             "code": "ESP",
+            "id":80,
             "shortName": "Espanyol",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/a/a7/RCD_Espanyol_De_Barcelona.svg"
@@ -36,6 +40,7 @@
           
             "name": "Málaga CF",
             "code": "MAL",
+            "id":84,
             "shortName": "Málaga",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/e/e8/FC_Málaga.svg"
@@ -44,6 +49,7 @@
            
             "name": "SD Eibar",
             "code": "EIB",
+            "id":278,
             "shortName": "Eibar",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/en/7/75/SD_Eibar_logo.svg"
@@ -52,6 +58,7 @@
           
             "name": "Levante UD",
             "code": "LUD",
+            "id":88,
             "shortName": "Levante",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/1/1f/Levante_ud.svg"
@@ -59,6 +66,7 @@
         {
             "name": "Villarreal CF",
             "code": "VCF",
+            "id":94,
             "shortName": "Villareal",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/7/70/Villarreal_CF_logo.svg"
@@ -67,6 +75,7 @@
            
             "name": "CD Leganes",
             "code": "LEG",
+            "id":745,
             "shortName": "Leganes",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/en/thumb/0/02/Club_Deportivo_Leganés.png/180px-Club_Deportivo_Leganés.png"
@@ -75,6 +84,7 @@
          
             "name": "Deportivo Alavés",
             "code": "ALA",
+            "id":263,
             "shortName": "Alaves",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/en/2/2e/Deportivo_Alaves_logo.svg"
@@ -83,6 +93,7 @@
             
             "name": "Girona FC",
             "code": null,
+            "id":298,
             "shortName": "Girona",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/en/9/90/For_article_Girona_FC.svg"
@@ -91,6 +102,7 @@
            
             "name": "Club Atlético de Madrid",
             "code": "ATM",
+            "id":78,
             "shortName": "Atlético",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/c/c1/Atletico_Madrid_logo.svg"
@@ -99,6 +111,7 @@
            
             "name": "RC Deportivo La Coruna",
             "code": "LAC",
+            "id":560,
             "shortName": "Deportivo",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/en/4/4e/RC_Deportivo_La_Coruña_logo.svg"
@@ -107,6 +120,7 @@
            
             "name": "Real Madrid CF",
             "code": "MAD",
+            "id":86,
             "shortName": "Real Madrid",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/3/3f/Real_Madrid_Logo.svg"
@@ -115,6 +129,7 @@
             
             "name": "RC Celta de Vigo",
             "code": "VIG",
+            "id":558,
             "shortName": "Celta Vigo",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/0/0c/Celta_Vigo.svg"
@@ -123,6 +138,7 @@
            
             "name": "Real Sociedad de Fútbol",
             "code": "RSS",
+            "id":92,
             "shortName": "Real Sociedad",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/5/55/Real_Sociedad_San_Sebastián.svg"
@@ -131,6 +147,7 @@
             
             "name": "FC Barcelona",
             "code": "FCB",
+            "id":81,
             "shortName": "Barcelona",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg"
@@ -139,6 +156,7 @@
            
             "name": "Real Betis",
             "code": "BET",
+            "id":90,
             "shortName": "Betis",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/4/43/Real_Betis.svg"
@@ -147,6 +165,7 @@
            
             "name": "Valencia CF",
             "code": "VAL",
+            "id":95,
             "shortName": "Valencia",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/7/75/FC_Valencia.svg"
@@ -155,6 +174,7 @@
            
             "name": "UD Las Palmas",
             "code": "LPA",
+            "id":275,
             "shortName": "Las Palmas",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/en/2/20/UD_Las_Palmas_logo.svg"

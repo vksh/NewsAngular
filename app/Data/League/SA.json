@@ -4,6 +4,7 @@
             
             "name": "Hellas Verona FC",
             "code": null,
+            "id":450,
             "shortName": "H. Verona",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/a/a2/Hellas_Verona_1903_FC.svg"
@@ -12,6 +13,7 @@
              
             "name": "AS Roma",
             "code": "ROM",
+            "id":100,
             "shortName": "Roma",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/3/32/AS_Rom.svg"
@@ -20,6 +22,7 @@
              
             "name": "Juventus Turin",
             "code": "JUVE",
+            "id":109,
             "shortName": "Juventus",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/d/d2/Juventus_Turin.svg"
@@ -28,6 +31,7 @@
              
             "name": "Udinese Calcio",
             "code": null,
+            "id":115,
             "shortName": "Udinese",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/b/b1/Udinese_Calcio.svg"
@@ -36,6 +40,7 @@
             
             "name": "US Cittá di Palermo",
             "code": "PAL",
+            "id":114,
             "shortName": "Palermo",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/7/7f/US_Palermo.svg"
@@ -44,6 +49,7 @@
             
             "name": "Genoa CFC",
             "code": "CFC",
+            "id":107,
             "shortName": "Genoa",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/7/76/Genoa_CFC.svg"
@@ -52,6 +58,7 @@
              
             "name": "US Sassuolo Calcio",
             "code": "SASS",
+            "id":471,
             "shortName": "Sassuolo",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/a/a3/US_Sassuolo_Calcio.svg"
@@ -59,6 +66,7 @@
         { 
             "name": "SSC Napoli",
             "code": "SSC",
+            "id":113,
             "shortName": "Napoli",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/commons/2/28/S.S.C._Napoli_logo.svg"
@@ -66,6 +74,7 @@
         { 
             "name": "UC Sampdoria",
             "code": null,
+            "id":584,
             "shortName": "Sampdoria",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/c/cc/Sampdoria_Genua.svg"
@@ -74,6 +83,7 @@
              
             "name": "Carpi FC",
             "code": null,
+            "id":713,
             "shortName": "Carpi",
             "squadMarketValue": null,
             "crestUrl": "https://upload.wikimedia.org/wikipedia/uk/0/0b/Carpi_FC_1909_logo.png"
@@ -81,6 +91,7 @@
         { 
             "name": "SS Lazio",
             "code": "LAZ",
+            "id":110,
             "shortName": "Lazio",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/thumb/4/47/Lazio_Rom.svg/500px-Lazio_Rom.svg.png"
@@ -89,6 +100,7 @@
             
             "name": "Bologna FC",
             "code": null,
+            "id":103,
             "shortName": "Bologna",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/9/92/FC_Bologna.svg"
@@ -97,6 +109,7 @@
              
             "name": "FC Internazionale Milano",
             "code": "Int",
+            "id":108,
             "shortName": "Inter",
             "squadMarketValue": null,
             "crestUrl": "https://upload.wikimedia.org/wikipedia/it/7/7e/Logo_FC_Internazionale_Milano_2014.png"
@@ -105,6 +118,7 @@
              
             "name": "Atalanta BC",
             "code": null,
+            "id":102,
             "shortName": "Atalanta",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/2/28/Atalanta_BC.svg"
@@ -112,6 +126,7 @@
         { 
             "name": "Frosinone Calcio",
             "code": null,
+            "id":470,
             "shortName": "Frosinone",
             "squadMarketValue": null,
             "crestUrl": "https://upload.wikimedia.org/wikipedia/it/c/c3/Frosinonestemma.png"
@@ -119,6 +134,7 @@
         { 
             "name": "Torino FC",
             "code": "FCT",
+            "id":586,
             "shortName": "Torino",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/2/2e/Torino_FC_Logo.svg"
@@ -127,6 +143,7 @@
             
             "name": "ACF Fiorentina",
             "code": "FIO",
+            "id":99,
             "shortName": "Fiorentina",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/d/de/AC_Florenz.svg"
@@ -135,6 +152,7 @@
             
             "name": "AC Milan",
             "code": "ACM",
+            "id":98,
             "shortName": "Milan",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/9/9e/AC_Mailand_Logo.svg"
@@ -143,6 +161,7 @@
              
             "name": "Empoli FC",
             "code": "EMP",
+            "id":445,
             "shortName": "Empoli",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/4/42/Logo_FC_Empoli.svg"
@@ -151,6 +170,7 @@
              
             "name": "AC Chievo Verona",
             "code": null,
+            "id":106,
             "shortName": "Chievo",
             "squadMarketValue": null,
             "crestUrl": "http://upload.wikimedia.org/wikipedia/de/3/3f/AC_Chievo_Verona.svg"

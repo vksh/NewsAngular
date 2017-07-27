@@ -9,6 +9,13 @@ app.controller('StatsController', ['$window', 'StatService', function ($window, 
         });
     };
     this.selectTeam = function (name) {
+          StatService.getFixture(name.id).then(function (response) {
+            self.fixture = [];
+            self.name = name.name;
+            self.crest = name.crestUrl;
+            self.fixture=response.data.fixtures;
+            console.log(self.fixture);
+        })
         StatService.getdetails(name.id).then(function (response) {
             self.details = [];
             self.name = name.name;
@@ -18,20 +25,25 @@ app.controller('StatsController', ['$window', 'StatService', function ($window, 
             console.log(self.details);
             self.searchTeam = "";
             self.showTeams = true;
-              self.showleague = true;
-            self.showTeamDetails=true;
+            self.showleague = true;
+            self.showTeamDetails = true;
         })
+
+     
     };
     this.selectLeague = function () {
         StatService.getLeague().then(function (response) {
             self.league = [];
+          
             self.league = response.data.League;
             console.log(self.league);
         })
     }
-    this.selectLeagueTeam = function (leagueName) {
-        StatService.getTeams(leagueName).then(function (response) {
+    this.selectLeagueTeam = function (caption) {
+        StatService.getTeams(caption.league).then(function (response) {
             self.leagueTeam = [];
+              self.crestLeague=caption.crest;
+            self.leaguename=caption.caption;
             self.leagueTeam = response.data.teams;
             console.log(self.leagueTeam);
             self.showleague = true;
@@ -61,6 +73,12 @@ app.controller('StatsController', ['$window', 'StatService', function ($window, 
             var url = "http://api.football-data.org/v1/teams/" + id + "/players";
             return $http.get(url);
         };
+
+        this.getFixture=function (id)
+        {
+            var url = "http://api.football-data.org/v1/teams/" + id +"/fixtures";
+            return $http.get(url);
+        }
 
     }]);
 

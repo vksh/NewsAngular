@@ -9,7 +9,7 @@
 
             </div>
             <div class=" col s6">
-              
+
                 <input class="form-control" type="search" placeholder="Enter Club Name" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getTeamsSheet(selectedLeague)">
 
 
@@ -19,7 +19,7 @@
 
                         <tbody>
                             <br>
-                            <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam"  ng-click="$ctrl.selectTeam(team)">
+                            <tr ng-repeat="team in $ctrl.team | filter:$ctrl.searchTeam" ng-click="$ctrl.selectTeam(team)">
                                 <td><img src="{{team.crestUrl}}" class="img-responsive" height="50px" width="50px"></td>
                                 <td ui-sref="stats"><strong>{{team.name}}</strong></td>
                             </tr>
@@ -31,21 +31,30 @@
     </form>
 </section>
 
-<section class="container-fluid row" ng-hide="$ctrl.showleague">
-    <div class="col-md-3 col-md-offset-1 stats-div"  ng-repeat="caption in $ctrl.league" ng-click="$ctrl.selectLeagueTeam(caption.league)">
+<section class="container-fluid " ng-hide="$ctrl.showleague">
+
+
+    <div class="col-md-2 col-md-offset-1  stats-div" ng-repeat="caption in $ctrl.league" ng-click="$ctrl.selectLeagueTeam(caption)">
         <center> <img src="{{caption.crest}}" class="img-responsive img-stats" alt="No image available"></center>
 
     </div>
 </section>
 
 <section class="container-fluid row" ng-hide="$ctrl.showTeams">
-    <div class="col-md-3  stats-div" ng-repeat="teams in $ctrl.leagueTeam" ng-click="$ctrl.selectTeam(teams)" >
-        <center> <img src="{{teams.crestUrl}}" class="img-responsive img-leagueteam"  ></center>
-                <h5 class="text-center">{{teams.name}}</h5>
-    </div></section>
-
+    <div class="col-xs-12">
+        <img src="{{$ctrl.crestLeague}}" class="img-responsive col-xs-12 col-md-2 col-md-offset-1" height="200px">
+        <h1 class="teamName col-xs-12 col-md-8 col-md-offset-1"> {{$ctrl.leaguename}}</h1>
+    </div>
+    <button class="btn btn-lg btn-success col-md-4 col-sm-5 col-md-offset-1 ">Teams</button>
+    <button class="btn btn-lg btn-success col-md-4 col-sm-5 col-md-offset-1 ">Stats</button>
+    <div class="col-md-3  stats-div" ng-repeat="teams in $ctrl.leagueTeam" ng-click="$ctrl.selectTeam(teams)">
+        <center> <img src="{{teams.crestUrl}}" class="img-responsive img-leagueteam"></center>
+        <h5 class="text-center">{{teams.name}}</h5>
+    </div>
+</section>
+<hr>
 <section class="container-fluid" ng-show="$ctrl.showTeamDetails">
-   <div class="col-xs-12">
+    <div class="col-xs-12">
         <img src="{{$ctrl.crest}}" class="img-responsive col-xs-12 col-md-2 col-md-offset-1" height="200px">
         <h1 class="teamName col-xs-12 col-md-8 col-md-offset-1"> {{$ctrl.name}}</h1>
     </div>
@@ -55,11 +64,38 @@
         <button class="btn btn-lg btn-success col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1" ng-click="showTable=true ;showme=false"
             ng-dblclick="showme=false">Stats</button>
 
-        <button class="btn btn-lg btn-success col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1" ng-click="showme=true" ng-dblclick="showme=false">Player</button>
+        <button class="btn btn-lg btn-success col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1" ng-click="showFixture=true;showme=false"
+            ng-dblclick="">fixture</button>
     </div>
-    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-2 col-md-offset-1 players z-depth-3 " ng-repeat="y in $ctrl.details" >
+    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-2 col-md-offset-1 players z-depth-3 " ng-repeat="y in $ctrl.details"
+        ng-hide="showFixture" ng-show="showme">
         <p>Name: {{y.name}}</p>
         <p>Position: {{y.position}}</p>
         <p>Nationality : {{y.nationality}}</p>
     </div>
 </section>
+<hr>
+<section class="container" ng-show="showFixture" ng-hide="showme">
+    <div class="col-xs-12 col-sm-12 table-responsive stats-table">
+        <table class="table  " border="1" width="100%">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Date</th>
+                    <th>Match Day </th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+
+
+                </tr>
+            </thead>
+            <tr ng-repeat="fixture in $ctrl.fixture">
+                <td>{{fixture.date}}</td>
+                <td>{{fixture.matchday}}</td>
+                <td>{{fixture.homeTeamName}}</td>
+                <td>{{fixture.awayTeamName}}</td>
+             </tr>
+
+        </table>
+
+
+    </div>

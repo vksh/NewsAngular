@@ -1,0 +1,42 @@
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+     <form class="form-group" ng-submit="formSubmit()">
+      <div class="form-grp">
+      <input type="text" class="validate" ng-model="username" placeholder="Email"> 
+      </div>
+    <div class="form-grp">
+      <input type="password" class="validate" ng-model="password" placeholder="Password"> 
+    </div>
+     <span class="text-success">{{ success }}</span>
+         <span class="text-danger">{{ error }}</span>
+     <button class="btn btn success pull-right" type="submit" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Login</button>
+     </form>
+    </div>
+  
+  </div>
+  <div id="modal2" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+     <form class="form-group" ng-submit="formSignup()">
+      <div class="form-grp">
+      <input type="text" class="validate" ng-model="username" placeholder="Email"> 
+      </div>
+    <div class="form-grp">
+      <input type="password" class="validate" ng-model="password" placeholder="Password"> 
+    </div>
+<div class="form-grp">
+      <input type="number" class="validate" placeholder="Contact No"> 
+    </div>
+     <button class="btn btn success pull-right" type="submit" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Sign Up</a></button>
+     </form>
+    </div>
+  
+  </div> 

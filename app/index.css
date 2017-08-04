@@ -79,3 +79,9 @@ h2 {
   .teamName{
     z-index: -500;
   }
+  .modal-content{
+    height:100%;
+}
+.modal{
+    max-height: 35%;
+}

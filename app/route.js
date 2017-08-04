@@ -6,18 +6,21 @@ var app = angular.module('myApp', ['ui.router'])
             .state('home', {
                 url: '/',
                 template: '<header-component></header-component>' +
+                '<login-component></login-component>' +
                 '<carousel-component></carousel-component>' +
                 '<sports-component></sports-component>'
             })
             .state('sports', {
                 url: '/sports',
                 template: '<header-component></header-component>' +
+                '<login-component></login-component>' +
                 '<carousel-component></carousel-component>' +
                 '<sports-component></sports-component> '
             })
             .state('news', {
                 url: '/news',
                 template: '<header-component></header-component>' +
+                '<login-component></login-component>' +
                 '<carousel-component></carousel-component>' +
                 '<news-component></news-component>'
             })
@@ -25,6 +28,7 @@ var app = angular.module('myApp', ['ui.router'])
             .state('ranking', {
                 url: '/ranking',
                 template: '<header-component></header-component>' +
+                '<login-component></login-component>' +
                 '<carousel-component></carousel-component>' +
                 '<ranking-component></ranking-component>'
             })
@@ -32,10 +36,11 @@ var app = angular.module('myApp', ['ui.router'])
                 url: '/teamdetails',
                 template: '<teamdetails-component></teamdetails-component>'
             })
-             .state('stats', {
+            .state('stats', {
                 url: '/stats',
-                template:'<header-component></header-component>' +
-                 '<stats-component></stats-component>'
+                template: '<header-component></header-component>' +
+                '<login-component></login-component>' +
+                '<stats-component></stats-component>'
             })
     })
 

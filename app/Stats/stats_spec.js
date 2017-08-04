@@ -13,6 +13,8 @@ describe('Unit: Stats', function () {
        
     }));
 
+    
+
     describe('statsComponent', function () {
         // Test some basic expectations about the controller
         it('should have team defined', function () {
@@ -37,7 +39,7 @@ describe('Unit: Stats', function () {
             var $injector = angular.injector([ 'myApp' ]);
             var myService = $injector.get('StatService');
            var Url="/Data/competition/comp.json";
-                    //something is missing here..
+                    
             expect(StatService).toHaveBeenCalledWith(Url)
         })
 

@@ -54,6 +54,7 @@ app.controller('StatsController', ['$window', 'StatService', function ($window, 
     .component('statsComponent', {
         templateUrl: '/Stats/stats.html',
         controller: 'StatsController'
+    
     })
 
 

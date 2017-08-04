@@ -1,13 +1,5 @@
 {
-    "_links": {
-        "self": {
-            "href": "http://api.football-data.org/v1/competitions/399/teams"
-        },
-        "competition": {
-            "href": "http://api.football-data.org/v1/competitions/399"
-        }
-    },
-    "count": 20,
+
     "teams": [
         {
             "_links": {

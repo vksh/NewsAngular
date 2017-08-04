@@ -1,6 +1,6 @@
 
 
-<div class="navbar navbar-primary bg-success navbar-static-top" role="navigation">
+<div class="navbar navbar-inverse bg-success navbar-static-top" role="navigation">
 
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -20,8 +20,19 @@
       <li><a ui-sref="news">News</a></li>
       <li><a ui-sref="ranking">Ranking</a></li>
       <li><a ui-sref="stats">Stats</a></li>
-      
-    </ul>
+         </ul>
+     <div class="col-sm-3 col-md-3 col-xs-12 col-md-offset-1 pull-right">
+            <form class="navbar-form" role="search">
+                <!-- <div class="input-group">
+                    <input class="form-control" type="search" ng-clock ng-model="$ctrl.searchTeam" ng-change="$ctrl.getData($ctrl.searchTeam)"
+                    /> -->
+                     <div class="input-group">
+                        <button class="btn btn-success"data-toggle="modal" data-target="#modal2" >Sign up</button>
+                    </div> 
+                      <div class="input-group">
+                        <button class="btn btn-success"data-toggle="modal" data-target="#modal1" >Login</button>
+                    </div> 
+                </div>
 
         
         </div>
